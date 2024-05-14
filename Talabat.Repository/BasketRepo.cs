@@ -10,7 +10,7 @@ namespace Talabat.Reposatory
 
         public BasketRepo(IConnectionMultiplexer redis)
         {
-            _database = redis.GetDatabase();
+            _database =  redis.GetDatabase();
         }
 
         public async Task<bool> DeleteBasketAsync(string BasketId)
